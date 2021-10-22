@@ -12,7 +12,7 @@ def index():
 
 @app.route("/result",methods=['POST','GET'])
 def result():
-    gender=int(str(request.form['gender']))
+    gender=int(request.form['gender'])
     age=int(request.form['age'])
     hypertension=int(request.form['hypertension'])
     heart_disease = int(request.form['heart_disease'])
